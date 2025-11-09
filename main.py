@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 from routers import predict, analyze, allocate, recommend  # import routers
+from routers import ccts  # 👈 add this
 
 app = FastAPI(title="HeatX | Industrial Energy AI API", version="2.0")
 
@@ -19,6 +20,7 @@ app.include_router(predict.router)
 app.include_router(analyze.router)
 app.include_router(allocate.router)
 app.include_router(recommend.router)
+app.include_router(ccts.router)  # 👈 mount CCTS at /ccts
 
 @app.get("/")
 async def root():

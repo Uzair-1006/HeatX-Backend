@@ -1,0 +1,88 @@
+{
+  "balances": {
+    "ded8e831-95e5-4751-8a71-ac7fb1a35f2b": 300.0,
+    "f2f4ee17-c04a-47a9-a88a-40eaafd1e03a": 600.0,
+    "263608ce-90cf-49b7-9b47-1d7fad534e6f": 0.0,
+    "6df070a5-bb0f-4408-a0d9-a5328f8721e3": 0.0
+  },
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": "2025-11-08T08:01:44.284915",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
+      "txs": [],
+      "hash": "GENESIS"
+    },
+    {
+      "index": 1,
+      "timestamp": "2025-11-08T09:50:21.320394",
+      "prev_hash": "GENESIS",
+      "merkle_root": "613ba64f65f42078765cf30bb3cf50729ef207522e4661d3eb6f85cefdba532d",
+      "txs": [
+        {
+          "tx_id": "673441bc-7b04-446c-9355-95a7f3677921",
+          "type": "MINT",
+          "timestamp": "2025-11-08T09:50:21.302390",
+          "payload": {
+            "amount": 1000.0,
+            "metadata": {
+              "source": "waste-heat-recovery",
+              "period": "Q4-2025"
+            },
+            "org_id": "f2f4ee17-c04a-47a9-a88a-40eaafd1e03a"
+          },
+          "signature": "b9bc0a30a32329263660b1c08fa02dc61ee92f0ddcd1cf26362f2cfe5aa94108"
+        }
+      ],
+      "hash": "48a83126fe310fb2414e27f2180bea2c3a11edbe8fafedab0b6954a457d090de"
+    },
+    {
+      "index": 2,
+      "timestamp": "2025-11-08T10:10:19.719223",
+      "prev_hash": "48a83126fe310fb2414e27f2180bea2c3a11edbe8fafedab0b6954a457d090de",
+      "merkle_root": "ab6939d4b056b5c02226d4e1e86ddbf0e67c1c7a3e20977704a19b4499e06731",
+      "txs": [
+        {
+          "tx_id": "f00a53da-b4b8-4790-9ddd-ef3f45577457",
+          "type": "TRANSFER",
+          "timestamp": "2025-11-08T10:10:19.718242",
+          "payload": {
+            "amount": 300.0,
+            "from_org": "f2f4ee17-c04a-47a9-a88a-40eaafd1e03a",
+            "metadata": {
+              "purpose": "offset energy savings Q4-2025"
+            },
+            "to_org": "ded8e831-95e5-4751-8a71-ac7fb1a35f2b"
+          },
+          "signature": "1dec3de7e11797262c8fe681627b0bf48c32d2083969892d8e510fe6fe2550ca"
+        }
+      ],
+      "hash": "0f5fc53c528f13c292d9cd7f93bf13f0e63cdf2e7008a066969d24237e4d10a5"
+    },
+    {
+      "index": 3,
+      "timestamp": "2025-11-08T10:13:29.679514",
+      "prev_hash": "0f5fc53c528f13c292d9cd7f93bf13f0e63cdf2e7008a066969d24237e4d10a5",
+      "merkle_root": "4eb86d667e9b381eff2b5070fbcc53a5acd476e34155de9216775290f1367e22",
+      "txs": [
+        {
+          "tx_id": "4741582a-2a32-4b25-a89e-556e06292dd9",
+          "type": "RETIRE",
+          "timestamp": "2025-11-08T10:13:29.679514",
+          "payload": {
+            "org_id": "f2f4ee17-c04a-47a9-a88a-40eaafd1e03a",
+            "amount": 100.0,
+            "reason": "Offset Q4-2025 operations",
+            "metadata": {
+              "project": "Waste Heat Recovery Program",
+              "region": "South India"
+            }
+          },
+          "signature": "d9b24e4d1ddfc50341ad27f2a071f8da5ad5263f8ff67fca4e7da7883959f162"
+        }
+      ],
+      "hash": "0dd772eb3dcecb5757263be64a0ec51e12e35f356ad82a39b2a0e623da0eed02"
+    }
+  ]
+}
